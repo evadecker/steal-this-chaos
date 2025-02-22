@@ -1,0 +1,15 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) skew(30deg);
+  }
+
+  to {
+    transform: rotate(360deg) skew(0deg);
+  }
+}
+
+*:not(html) {
+  mix-blend-mode: difference;
+  background-color: greenyellow;
+  animation: rotate 10s linear infinite;
+}
